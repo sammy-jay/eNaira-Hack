@@ -1,14 +1,15 @@
-import CreateAccount from "./pages/CreateAccount";
-import Onboarding from './pages/Onboarding';
-import Verify from './pages/Verify';
+import {Routes, Route} from "react-router-dom";
+import { Auth, CreatePassword, Onboarding, Success, Verify } from "./pages";
 
 function App() {
   return (
-    <div >
-      {/* <Onboarding/> */}
-      {/* <CreateAccount /> */}
-      <Verify/>
-    </div>
+    <Routes>
+      <Route path="/" element={<Onboarding />} />
+      <Route path="/auth" element={<Auth />} />
+      <Route path="/verify" element={<Verify />} />
+      <Route path="/createPassword" element={<CreatePassword />} />
+      <Route path="/success" element={<Success />} />
+    </Routes>
   );
 }
 

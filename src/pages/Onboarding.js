@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
+
 import vector from "../assets/Vector.png";
 import vector1 from "../assets/Vector-1.png";
 import vector2 from "../assets/Vector-2.png";
@@ -10,10 +12,11 @@ const data = [
 ];
 
 const Onboarding = () => {
+    const navigate = useNavigate()
   const [index, setIndex] = useState(0);
 
   return (
-    <section className="py-8 pt-[40px] px-6 bg-white min-h-screen flex flex-col justify-start items-center space-y-[30px] max-w-[400px]">
+    <section className=" py-8 pt-[40px] px-6 bg-white min-h-screen flex flex-col justify-start items-center mx-auto space-y-[30px] max-w-[400px]">
       <div className="bg-[#1CBD5C14] p-8 rounded h-[289px] w-[366px] flex justify-center items-center">
         <img src={data[index].image} alt="vector 1" />
       </div>
@@ -50,7 +53,10 @@ const Onboarding = () => {
         >
           Next
         </button>
-        <button className="text-black flex-1 shadow bg-white rounded text-center py-2">
+        <button
+          className="text-black flex-1 shadow bg-white rounded text-center py-2"
+          onClick={() => navigate("/auth")}
+        >
           Skip
         </button>
       </div>
