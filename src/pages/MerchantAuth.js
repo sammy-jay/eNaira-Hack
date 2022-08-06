@@ -8,8 +8,8 @@ const MerchantAuth = () => {
     <section className="relative mx-auto max-w-[400px] pb-[100px] pt-[50px] px-6 bg-transparent min-h-screen flex flex-col justify-start items-start space-y-2">
       {index === 0 && (
         <>
-          <p className="text-center text-sm">MERCHANT ACCCOUNT</p>
-          <h2 className="text-center leading-10 font-bold text-[32px] max-w-sm">
+          <p className="text-sm">MERCHANT ACCCOUNT</p>
+          <h2 className="leading-10 font-bold text-[32px] max-w-sm">
             Personal Information
           </h2>
 
@@ -75,8 +75,8 @@ const MerchantAuth = () => {
       )}
       {index === 1 && (
         <>
-          <p className="text-center text-sm ">MERCHANT ACCCOUNT</p>
-          <h2 className="text-center leading-10 font-bold text-[32px] max-w-sm">
+          <p className=" text-sm ">MERCHANT ACCCOUNT</p>
+          <h2 className="leading-10 font-bold text-[32px] max-w-sm">
             Business Information
           </h2>
 
