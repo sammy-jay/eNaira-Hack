@@ -8,7 +8,7 @@ const Recieve = () => {
       <h2 className="text-center leading-10 font-bold text-[32px] max-w-sm">
         Recieve
       </h2>
-      <p className="text-center text-sm text-[#828282]">
+      <p className=" text-sm text-[#828282]">
         Select the applicable payment retrieval method
       </p>
       <div className="pt-[30px] w-full flex flex-col space-y-3">

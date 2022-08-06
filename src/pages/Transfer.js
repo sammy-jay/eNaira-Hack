@@ -8,7 +8,7 @@ const Transfer = () => {
       <h2 className="text-center leading-10 font-bold text-[32px] max-w-sm">
         Transfer
       </h2>
-      <p className="text-center text-sm text-[#828282]">
+      <p className=" text-sm text-[#828282]">
         Send e-Naira to a private wallet owner or a bank account
       </p>
       <form className="w-full pt-8">

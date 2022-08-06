@@ -9,7 +9,11 @@ const CreateAccount = () => {
 
   return (
     <section className="relative mx-auto max-w-[400px] pb-[100px] pt-[20px] px-6 bg-transparent min-h-screen flex flex-col justify-start items-center space-y-3">
-      <img src={vector4} alt="vector4" />
+      <img
+        src={vector4}
+        alt="vector4"
+        className="h-[100px] object-contain "
+      />
       <h2 className="text-center leading-10 font-bold text-[32px] max-w-sm">
         {!isLogin ? "Let’s Create your Account" : "Login to your Account"}
       </h2>
@@ -82,7 +86,10 @@ const CreateAccount = () => {
         >
           {isLogin ? "Create Account" : "Login"}
         </button>
-        <p className="cursor-pointer text-center text-[#0B7428] text-sm font-bold" onClick={() => navigate("/merchantAuth")}>
+        <p
+          className="cursor-pointer text-center text-[#0B7428] text-sm font-bold"
+          onClick={() => navigate("/merchantAuth")}
+        >
           Register as Merchant →
         </p>
       </div>

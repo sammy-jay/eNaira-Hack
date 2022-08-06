@@ -5,7 +5,7 @@ import vector4 from "../assets/Vector-4.png";
 const Dashboard = () => {
   const navigate = useNavigate()
   return (
-    <section className=" py-8 pt-[40px] px-6 bg-transparent min-h-screen flex flex-col justify-start items-center mx-auto space-y-[20px] max-w-[400px]">
+    <section className=" md:py-8 md:pt-[40px] md:px-6 bg-transparent min-h-screen flex flex-col justify-start items-center mx-auto space-y-[20px] max-w-[400px]">
       <div className="bg-[rgb(28,189,92)] flex flex-col p-4 w-full rounded-br-[24px] rounded-bl-[24px] text-white ">
         <p className="text-[14px] uppercase font-thin text-gray-50">
           Welcome Back
@@ -19,7 +19,7 @@ const Dashboard = () => {
           />
           
           <p className="text-[16px] font-thin text-gray-50">Your balance is</p>
-          <div className="flex justify-between mt-2 items-center">
+          <div className="flex justify-between mt-3 items-center">
             <span className="text-[26px] font-bold">#213,304.45</span>
             <span className="cursor-pointer">Hide</span>
           </div>
