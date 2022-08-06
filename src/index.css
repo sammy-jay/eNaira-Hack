@@ -7,6 +7,6 @@ body{
 }
 @layer components{
     .input-field {
-        @apply bg-white border-none shadow text-gray-900 text-base block w-full p-1.5 px-2 rounded focus:outline-none;
+        @apply bg-white border-none shadow text-gray-900 text-base block w-full  p-2 rounded focus:outline-none;
     }
 }

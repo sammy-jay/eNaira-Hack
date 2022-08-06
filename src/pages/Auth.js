@@ -82,6 +82,9 @@ const CreateAccount = () => {
         >
           {isLogin ? "Create Account" : "Login"}
         </button>
+        <p className="cursor-pointer text-center text-[#0B7428] text-sm font-bold" onClick={() => navigate("/merchantAuth")}>
+          Register as Merchant →
+        </p>
       </div>
     </section>
   );
