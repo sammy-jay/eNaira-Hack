@@ -1,5 +1,6 @@
 import {Routes, Route} from "react-router-dom";
 import { Auth, CreatePassword, Onboarding, Success, Verify } from "./pages";
+import Dashboard from './pages/Dashboard';
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <Route path="/verify" element={<Verify />} />
       <Route path="/createPassword" element={<CreatePassword />} />
       <Route path="/success" element={<Success />} />
+      <Route path="/home" element={<Dashboard />} />
     </Routes>
   );
 }
