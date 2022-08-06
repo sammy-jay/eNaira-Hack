@@ -32,7 +32,7 @@ const Onboarding = () => {
             return (
               <span
                 key={dindex}
-                className="h-[4px] w-[13px] rounded-full bg-[#1CBD5C14] inline"
+                className="h-[4px] w-[13px] rounded-full bg-[#4F4F4F] inline"
               />
             );
           else

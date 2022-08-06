@@ -51,7 +51,7 @@ const MerchantAuth = () => {
                   return (
                     <span
                       key={d}
-                      className="h-[4px] w-[13px] rounded-full bg-[#1CBD5C14] inline"
+                      className="h-[4px] w-[13px] rounded-full bg-[#4F4F4F] inline"
                     />
                   );
                 else
@@ -110,7 +110,7 @@ const MerchantAuth = () => {
                   return (
                     <span
                       key={d}
-                      className="h-[4px] w-[13px] rounded-full bg-[#1CBD5C14] inline"
+                      className="h-[4px] w-[13px] rounded-full bg-[#4F4F4F] inline"
                     />
                   );
                 else

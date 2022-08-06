@@ -2,11 +2,32 @@
 @tailwind components;
 @tailwind utilities;
 
-body{
-    background: #F6FCF8;
+* {
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
 }
-@layer components{
-    .input-field {
-        @apply bg-white border-none shadow text-gray-900 text-base block w-full  p-2 rounded focus:outline-none;
-    }
+html::-webkit-scrollbar {
+  width: 0;
+}
+
+body {
+  background: #f6fcf8;
+}
+textarea {
+  resize: none;
+}
+input[type="number"]::-webkit-inner-spin-button {
+  display: none;
+}
+@layer components {
+  .input-field {
+    @apply bg-white border-none shadow text-gray-900 text-base block w-full  p-2 rounded focus:outline-none;
+  }
+  .recieve-type {
+    @apply w-full border border-[#1CBD5C8F] bg-white p-2 rounded cursor-pointer text-[#0B7428];
+  }
 }

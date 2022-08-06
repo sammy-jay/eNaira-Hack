@@ -1,7 +1,10 @@
-import {Routes, Route} from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import { Auth, CreatePassword, Onboarding, Success, Verify } from "./pages";
-import Dashboard from './pages/Dashboard';
-import MerchantAuth from './pages/MerchantAuth';
+import NotFound from "./pages/404";
+import Dashboard from "./pages/Dashboard";
+import MerchantAuth from "./pages/MerchantAuth";
+import Recieve from "./pages/Recieve";
+import Transfer from "./pages/Transfer";
 
 function App() {
   return (
@@ -13,6 +16,9 @@ function App() {
       <Route path="/createPassword" element={<CreatePassword />} />
       <Route path="/success" element={<Success />} />
       <Route path="/home" element={<Dashboard />} />
+      <Route path="/home/recieve" element={<Recieve />} />
+      <Route path="/home/transfer" element={<Transfer />} />
+      <Route path="*" element={<NotFound />} />
     </Routes>
   );
 }
