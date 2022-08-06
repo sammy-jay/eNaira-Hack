@@ -3,7 +3,7 @@ import vector4 from "../assets/Vector-4.png";
 
 const Dashboard = () => {
   return (
-    <section className=" py-8 pt-[40px] px-6 bg-white min-h-screen flex flex-col justify-start items-center mx-auto space-y-[30px] max-w-[400px]">
+    <section className=" py-8 pt-[40px] px-6 bg-transparent min-h-screen flex flex-col justify-start items-center mx-auto space-y-[20px] max-w-[400px]">
       <div className="bg-[rgb(28,189,92)] flex flex-col p-4 w-full rounded-br-[24px] rounded-bl-[24px] text-white ">
         <p className="text-[14px] uppercase font-thin text-gray-50">
           Welcome Back
@@ -13,7 +13,7 @@ const Dashboard = () => {
           <img
             src={vector4}
             alt="vector4"
-            className="h-[60px] object-contain absolute  right-[25%] opacity-40"
+            className="h-[60px] object-contain absolute  right-[25%] opacity-20"
           />
           <p className="text-[16px] font-thin text-gray-50">Your balance is</p>
           <div className="flex justify-between mt-2 items-center">
@@ -32,6 +32,11 @@ const Dashboard = () => {
           </button>
         </div>
       </div>
+      <div className="w-full flex justify-between items-center px-2">
+        <p className="tex-[16px] font-semibold">Recent Transactions</p>
+        <p className="text-[#828282] text-sm">See All</p>
+      </div>
+      <div className="w-full p-2 bg-white h-[270px] rounded-tr-[24px] rounded-tl-[24px] "></div>
     </section>
   );
 };

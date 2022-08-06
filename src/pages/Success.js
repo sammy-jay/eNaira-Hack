@@ -5,10 +5,9 @@ import vector3 from "../assets/Vector-3.png";
 const Success = () => {
   const navigate = useNavigate()
   return (
-    <section className="relative mx-auto max-w-[400px] pb-[100px] px-6 bg-white min-h-screen flex flex-col justify-center items-center space-y-6">
-      
-        <img src={vector3} className="" alt="vector3" />
-       
+    <section className="relative mx-auto max-w-[400px] pb-[100px] px-6 bg-transparent min-h-screen flex flex-col justify-center items-center space-y-6">
+      <img src={vector3} className="" alt="vector3" />
+
       <h2 className="text-center leading-10 font-medium text-[24px] max-w-sm">
         Awesome
       </h2>

@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 const CreatePassword = () => {
   const navigate = useNavigate()
   return (
-    <section className=" mx-auto max-w-[400px] pb-[100px] pt-[20px] px-6 bg-white min-h-screen flex flex-col justify-start items-center space-y-[20px]">
+    <section className=" mx-auto max-w-[400px] pb-[100px] pt-[20px] px-6 bg-transparent min-h-screen flex flex-col justify-start items-center space-y-[20px]">
       <img src={vector4} alt="vector4" />
       <h2 className="text-center leading-10 font-bold text-[32px] max-w-sm">
         Let’s secure your Account
@@ -17,14 +17,14 @@ const CreatePassword = () => {
         <div className="">
           <input
             type="text"
-            className="bg-white border border-black text-gray-900 text-base block w-full p-1.5 rounded focus:outline-none"
+            className="input-field"
             placeholder="New Password"
           />
         </div>
         <div className="">
           <input
             type="password"
-            className="bg-white border border-black text-gray-900 text-base block w-full p-1.5 rounded focus:outline-none"
+            className="input-field "
             placeholder="Confirm Password"
           />
         </div>

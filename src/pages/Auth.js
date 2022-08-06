@@ -8,7 +8,7 @@ const CreateAccount = () => {
   const [isLogin, setIsLogin] = useState(true);
 
   return (
-    <section className="relative mx-auto max-w-[400px] pb-[100px] pt-[20px] px-6 bg-white min-h-screen flex flex-col justify-start items-center space-y-3">
+    <section className="relative mx-auto max-w-[400px] pb-[100px] pt-[20px] px-6 bg-transparent min-h-screen flex flex-col justify-start items-center space-y-3">
       <img src={vector4} alt="vector4" />
       <h2 className="text-center leading-10 font-bold text-[32px] max-w-sm">
         {!isLogin ? "Let’s Create your Account" : "Login to your Account"}
@@ -16,17 +16,13 @@ const CreateAccount = () => {
 
       <form className="w-full pt-8">
         <div className="mb-6">
-          <input
-            type="text"
-            className="bg-white border border-black text-gray-900 text-base block w-full p-1.5 rounded focus:outline-none"
-            placeholder="Username"
-          />
+          <input type="text" className="input-field" placeholder="Username" />
         </div>
         {isLogin && (
           <div className="mb-6">
             <input
               type="password"
-              className="bg-white border border-black text-gray-900 text-base block w-full p-1.5 rounded focus:outline-none"
+              className="input-field"
               placeholder="Password"
             />
           </div>
@@ -37,14 +33,14 @@ const CreateAccount = () => {
             <div className="mb-6">
               <input
                 type="text"
-                className="bg-white border border-black text-gray-900 text-base block w-full p-1.5 rounded focus:outline-none"
+                className="input-field"
                 placeholder="Full Name"
               />
             </div>
             <div className="mb-6">
               <input
                 type="number"
-                className="bg-white border border-black text-gray-900 text-base block w-full p-1.5 rounded focus:outline-none"
+                className="input-field"
                 placeholder="Phone No"
               />
             </div>
@@ -81,7 +77,7 @@ const CreateAccount = () => {
           {isLogin ? "New User?" : "Already have an account?"}{" "}
         </p>
         <button
-          className="text-gray-700 bg-[rgba(0, 0, 0, 0.08)] hover:bg-[rgba(0, 0, 0, 0.05)] focus:outline-none rounded shadow w-full sm:w-auto px-5 py-2 text-center text-sm font-bold"
+          className="text-gray-700 bg-white focus:outline-none rounded shadow w-full sm:w-auto px-5 py-2 text-center text-sm font-bold"
           onClick={() => setIsLogin(!isLogin)}
         >
           {isLogin ? "Create Account" : "Login"}

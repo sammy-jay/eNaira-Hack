@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 const Verify = () => {
   const navigate = useNavigate();
   return (
-    <section className="relative mx-auto max-w-[400px] pb-[100px] pt-[20px] px-6 bg-white min-h-screen flex flex-col justify-start items-center space-y-[20px]">
+    <section className="relative mx-auto max-w-[400px] pb-[100px] pt-[20px] px-6 bg-transparent min-h-screen flex flex-col justify-start items-center space-y-[20px]">
       <img src={vector4} alt="vector4" />
       <h2 className="text-center leading-10 font-bold text-[32px] max-w-sm">
         Verify your phone number

@@ -16,7 +16,7 @@ const Onboarding = () => {
   const [index, setIndex] = useState(0);
 
   return (
-    <section className=" py-8 pt-[40px] px-6 bg-white min-h-screen flex flex-col justify-start items-center mx-auto space-y-[30px] max-w-[400px]">
+    <section className=" py-8 pt-[40px] px-6 bg-white min-h-screen flex flex-col justify-start items-center mx-auto my-[2rem] space-y-[30px] max-w-[400px]">
       <div className="bg-[#1CBD5C14] p-8 rounded h-[289px] w-full flex justify-center items-center">
         <img src={data[index].image} alt="vector 1" />
       </div>
