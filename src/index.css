@@ -13,9 +13,19 @@
   user-select: none;
   font-family: 'Poppins', sans-serif;
 }
-html::-webkit-scrollbar {
+*::-webkit-scrollbar {
   width: 0;
 }
+/* div::-webkit-scrollbar {
+  width: 2px;
+}
+div::-webkit-scrollbar-track {
+  background: transparent;
+}
+div::-webkit-scrollbar-thumb {
+  border-radius: 1rem;
+  background: #d1d1d1;
+} */
 
 body {
   background: #f6fcf8;
