@@ -6,7 +6,7 @@ const Verify = () => {
   const navigate = useNavigate();
   return (
     <section className="relative mx-auto max-w-[400px] pb-[100px] pt-[20px] px-6 bg-transparent min-h-screen flex flex-col justify-start items-center space-y-[20px]">
-      <img src={vector4} alt="vector4" />
+      <img src={vector4} alt="vector4" className="h-[100px] object-contain " />
       <h2 className="text-center leading-10 font-bold text-[32px] max-w-sm">
         Verify your phone number
       </h2>
@@ -17,7 +17,14 @@ const Verify = () => {
         +234 807 2232 222
       </h2>
       {/* Code here */}
-      <p>to be completed...</p>
+      <div className="w-full">
+        <input
+          type="number"
+          maxLength={6}
+          className="input-field text-center"
+          placeholder="OTP Here"
+        />
+      </div>
       <button
         type="button"
         className="text-white bg-[#1CBD5C] hover:bg-[#198645] focus:outline-none rounded shadow w-full sm:w-auto px-5 py-2 text-center font-bold text-sm"

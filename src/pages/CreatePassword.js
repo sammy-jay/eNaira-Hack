@@ -6,7 +6,7 @@ const CreatePassword = () => {
   const navigate = useNavigate();
   return (
     <section className=" mx-auto max-w-[400px] pb-[100px] pt-[20px] px-6 bg-transparent min-h-screen flex flex-col justify-start items-center space-y-[20px]">
-      <img src={vector4} alt="vector4" />
+      <img src={vector4} alt="vector4" className="h-[100px] object-contain " />
       <h2 className="text-center leading-10 font-bold text-[32px] max-w-sm">
         Let’s secure your Account
       </h2>

@@ -1,12 +1,13 @@
 import React from "react";
 import { useNavigate } from 'react-router-dom';
-import vector3 from "../assets/Vector-3.png";
+// import vector3 from "../assets/Vector-3.png";
 
 const Success = () => {
   const navigate = useNavigate()
   return (
     <section className="relative mx-auto max-w-[400px] pb-[100px] px-6 bg-transparent min-h-screen flex flex-col justify-center items-center space-y-6">
-      <img src={vector3} className="" alt="vector3" />
+      {/* <img src={vector3} className="" alt="vector3" /> */}
+      <p className="text-[60px] text-green-600 p-0 m-0">✔</p>
 
       <h2 className="text-center leading-10 font-medium text-[24px] max-w-sm">
         Awesome
