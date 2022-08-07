@@ -1,3 +1,4 @@
+import React from "react"
 import { Routes, Route } from "react-router-dom";
 import { Auth, CreatePassword, Onboarding, Success, Verify } from "./pages";
 import NotFound from "./pages/404";

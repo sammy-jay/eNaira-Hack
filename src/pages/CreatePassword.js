@@ -3,7 +3,7 @@ import vector4 from "../assets/Vector-4.png";
 import { useNavigate } from "react-router-dom";
 
 const CreatePassword = () => {
-  const navigate = useNavigate()
+  const navigate = useNavigate();
   return (
     <section className=" mx-auto max-w-[400px] pb-[100px] pt-[20px] px-6 bg-transparent min-h-screen flex flex-col justify-start items-center space-y-[20px]">
       <img src={vector4} alt="vector4" />
@@ -31,7 +31,7 @@ const CreatePassword = () => {
         <div className="flex justify-between items-center ">
           <span className="text-gray-600">Strength</span>
           <div className="flex space-x-2 items-center">
-            {[1, 2, 3].map((x, index) => {
+            {[1, 2, 3].map((x) => {
               return (
                 <span
                   key={x}
@@ -57,7 +57,7 @@ const CreatePassword = () => {
               />
             </div>
             <label
-              for="remember"
+              htmlFor="remember"
               className="ml-2 text-sm text-gray-900 dark:text-gray-600"
             >
               Upper and Lower Case Alphabets
@@ -74,7 +74,7 @@ const CreatePassword = () => {
               />
             </div>
             <label
-              for="remember"
+              htmlFor="remember"
               className="ml-2 text-sm text-gray-900 dark:text-gray-600"
             >
               Numbers
@@ -91,7 +91,7 @@ const CreatePassword = () => {
               />
             </div>
             <label
-              for="remember"
+              htmlFor="remember"
               className="ml-2 text-sm text-gray-900 dark:text-gray-600"
             >
               Symbols
